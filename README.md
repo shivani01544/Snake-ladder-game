@@ -2,7 +2,7 @@ A modern web-based implementation of the classic Snakes and Ladders (साँ�
 board game using HTML, CSS, and JavaScript.
 
 
-🚀 Features :-
+🚀 Features
 🎮 Supports 2 to 4 players
 🤖 Play vs Computer mode
 🎲 Dice rolling animation with sound effects
