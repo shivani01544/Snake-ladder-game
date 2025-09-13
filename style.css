@@ -13,7 +13,7 @@ h1 {
 
 /* 🔷 Shared background theme */
 .screen-bg {
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background: linear-gradient(135deg,  #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
   padding: 40px;
   min-height: 100vh;
   color: white;
