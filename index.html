@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake and Ladder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎲 Snake & Ladder</h1>
+
+  <div id="setup" class="screen-bg">
+    <label for="mode">Select Game Mode:</label>
+    <select id="mode" onchange="showNameInputs()">
+      <option value="">-- Select --</option>
+      <option value="2">2 Players</option>
+      <option value="3">3 Players</option>
+      <option value="4">4 Players</option>
+      <option value="computer">VS Computer</option>
+    </select>
+    <div id="name-inputs"></div>
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <div id="game" class="screen-bg" style="display: none;">
+    <div id="game-area">
+      <div id="board"></div>
+      <div id="side-panel">
+        <p id="status">Click roll to begin...</p>
+        <button id="roll-btn" onclick="rollDice()">🎲 Roll Dice</button>
+        <div id="dice">🎲</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="result-screen" class="screen-bg" style="display: none;">
+    <h2>🏆 Game Over</h2>
+    <div id="ranking"></div>
+    <button onclick="resetToStart()">🔁 Restart</button>
+  </div>
+
+  <audio id="dice-sound" src="sounds_dice-roll.mp3"></audio>
+  <audio id="snake-sound" src="sounds_hissing-snake-sound-effect.mp3"></audio>
+  <audio id="ladder-sound" src="sounds_climb_rope_loop_00.mp3"></audio>
+  <audio id="win-sound" src="sounds_flawless-victory-game-over-deep-voice.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
